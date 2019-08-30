@@ -34,7 +34,17 @@
     background-color: blue;
     color: white;
   }
-  #h1{
+  #he1{
       font-family: Arial;
       font-size: 20px;
+
+  }
+
+  #head{
+      background-image: url(../img/images\ \(1\).jpeg);
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      color: white;
+      padding: 20px;
   }
