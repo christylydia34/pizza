@@ -1,6 +1,3 @@
-// business logic
-$(document).ready (function(){
-   
 
 function Order(type,size,crust,topping,number){
     this.type=type;
@@ -14,7 +11,7 @@ Order.prototype.pizza=function(){
     return "You have ordered:Pizza type  is " + this.type+",size chosen is " + this.size + ",with"+this.crust + ",with" + this.topping+ ", the quantity ordered is " + this.number
 }
 //UI logic
-
+$(document).ready(function(){
     $("form#f1").submit(function(event){
 event.preventDefault();
 
@@ -92,7 +89,7 @@ console.log("inputtedSize");
       var money4=1
     };
 
-    var newPizza = new Order (inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
+    var newPizza = new Order (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
     var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)+parseInt(money4)
     var totalMoney = pizzaMoney * inputtedNumber
     var total = totalMoney + 10 
