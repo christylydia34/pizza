@@ -22,77 +22,182 @@
     </div>
     <!-- end of navbar -->
 
-    <div class="container">
-        <div class="home">
-            <div id="h01">
-                <h1 id="he1">WELCOME TO CHRISTYS EL-PIZZERIA</h1>
-                <div class="pizzol">
-                    <p>Welcome to the hottest joint in the city.Here we serve you with the most delicious,affordable
-                        pizzas.
-                        <strong>You can even create your won pizza from scracth</strong>So what are you waiting for
-                        .Order
-                        below</p>
 
-                    <button class="button" id="btn"><a href="#menu" style="color: darkred">CHECKOUT OUR MENU</a></button>
+    <div class="home">
+        <div id="h01">
+            <h1 id="he1">WELCOME TO CHRISTYS EL-PIZZERIA</h1>
+            <div class="pizzol">
+                <p>Welcome to the hottest joint in the city.Here we serve you with the most delicious,affordable
+                    pizzas.
+                    <strong>You can even create your won pizza from scracth</strong>So what are you waiting for
+                    .Order
+                    below</p>
+                <br>
+                <br>
+                <button class="button" id="btn"><a href="#menu" style="color: darkred">CHECKOUT OUR MENU</a></button>
+
+            </div>
+        </div>
+        <div class="container ">
+            <div id="Menu">
+                <h5>THE BEST </h5>
+                <div class="row">
+
+
+                    <div class="card" style="width: 17rem;" id="IMG4">
+                        <img class="card-img-top" src="img/image/Seekh-Kabab-Product-Image1.png" alt="Card image cap"
+                            id="Work4">
+                        <p id="text4"></p>
+                    </div>
+                    <div class="card" style="width: 17rem;" id="work3">
+                        <img class="card-img-top" src="img/image/bbq_buzz2.png" alt="Card image cap">
+                        <p id="text3">WORK 3</p>
+                    </div>
+
+                    <div class="card" style="width: 17rem;" id="work2">
+                        <img class="card-img-top" src="img/image/chicken_supreme9.png" alt="Card image cap">
+                        <p id="text2">WORK 2</p>
+                    </div>
+
+                    <div class="card" style="width: 17rem;" id="work1">
+                        <img class="card-img-top" src="img/image/cheeky_chicken6.png" alt="Card image cap">
+                        <p id="text1">WORK 1</p>
+                    </div>
+
+                    <div class="card" style="width: 17rem;" id="work8">
+                        <img class="card-img-top" src="img/image/veggie_lovers66.png" alt="Card image cap">
+                        <p id="text8">WORK 8</p>
+                    </div>
+
+
+                    <div class="card" style="width: 17rem;" id="work7">
+                        <img class="card-img-top" src="img/image/super_supreme_new8.png" alt="Card image cap">
+
+                        <p id="text7">WORK 7</p>
+                    </div>
+
+                    <div class="card" style="width: 17rem;" id="work6">
+                        <img class="card-img-top" src="img/image/pizza1.jpeg" alt="Card image cap">
+
+                        <p id="text6">WORK 6</p>
+                    </div>
+
+
+                    <div class="card" style="width: 17rem;" id="work5">
+                        <img class="card-img-top" src="img/image/behari_chicken_pizza_img7.png" alt="Card image cap">
+
+                        <p id="text5">WORK 5</p>
+                    </div>
 
                 </div>
+
             </div>
-        </div>
-    </div>
-    <div class="container ">
-        <h5 id="men1">THE BEST </h5>
-        <div class="row">
+            <div id="order">
+                <h4>Place your order below</h4>
+                <div class="well">
+                    <div class="col-md-6">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="size">Select your preefrable size</label>
+                                <select class="form-control" id="fmsize">
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="Type">Select your preferable pizza</label>
+                                <select required id="Type" class="form-control">
+                                    <option name="Type" value="Pepporoni">Pepporoni</option>
+                                    <option name="Type" value="Hawiian">Hawiian</option>
+                                    <option name="Type" value="Stuffed">Stuffed</option>
+                                    </option>
+                                    <option name="Type" value="Bbq chicken">Barbecue Chicken</option>
+                                    </option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="crust">Select your preferable crust</label>
+                                <select class="form-control" id="crust">
+                                    <option>Crispy</option>
+                                    <option>Gluten-free</option>
+                                    <option>Stuffed</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="toppings">Select your preferred toppings</label>
+                                <select class="form-control" id="toppings">
+                                    <option name="toppings" value="Pepporoni">Pepporoni</option>
+                                    <option name="toppings" value="Mushrooms">Mushrooms</option>
+                                    <option name="toppings" value="Onions">Onions</option>
+                                    </option>
+                                    <option name="toppings" value="Green peppers">Green peppers</option>
+                                    <option name="toppings" value="olives">Olives</option>
+                                    <option name="toppings" value="Bacon">Bacon</option>
+                                    <option name="toppings" value="cheese">Extra cheese</option>
 
 
+                                </select>
 
-            <div class="card" style="width: 17rem;" id="IMG4">
-                <img class="card-img-top" src="img/image/Seekh-Kabab-Product-Image1.png" alt="Card image cap"
-                    id="Work4">
-                <p id="text4"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Number">number you would want</label>
+                                <select class="form-control" name="number" id="no" aria-placeholder="eg5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+
+                                </select>
+                          
+                            </div>
+                            <h6>Pizza Delivery</h6>
+                            <p>Do you want your pizza to be delivered? </p>
+                            <form>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="delivery1" value="Yes">
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="delivery2" value="No">
+                                    <label class="form-check-label" for="inlineRadio1">No</label>
+                                </div>
+                            </form>
+                            <button type="submit" id="view">Delivery</button>
+                        </div>
+                    </div>
+<div>
+    <div class="container">
+        <div class="paragraph5">
+                <img src="img/social_icons/behance.png">
+                <img src="img/social_icons/dribble.png">
+                <img src="img/social_icons/facebook.png">
+                <img src="img/social_icons/flickr.png">
+                <img src="img/social_icons/g_plus.png">
+                <img src="img/social_icons/pinterest.png">
+                <img src="img/social_icons/skype.png">
+                <img src="img/social_icons/stumble_upon.png">
+                <img src="img/social_icons/twitter.png">
+                <img src="img/social_icons/you_tube.png">
             </div>
-            <div class="card" style="width: 17rem;" id="work3">
-                <img class="card-img-top" src="img/image/bbq_buzz2.png" alt="Card image cap">
-                <p id="text3">WORK 3</p>
-            </div>
 
-            <div class="card" style="width: 17rem;" id="work2">
-                <img class="card-img-top" src="img/image/chicken_supreme9.png" alt="Card image cap">
-                <p id="text2">WORK 2</p>
-            </div>
+            <footer>
+                <p>CHRISTYS PIZZERIA</p>
+                <p> 2019</p>
+            </footer>
 
-            <div class="card" style="width: 17rem;" id="work1">
-                <img class="card-img-top" src="img/image/cheeky_chicken6.png" alt="Card image cap">
-                <p id="text1">WORK 1</p>
-            </div>
-
-            <div class="card" style="width: 17rem;" id="work8">
-                <img class="card-img-top" src="img/image/veggie_lovers66.png" alt="Card image cap">
-                <p id="text8">WORK 8</p>
-            </div>
-
-
-            <div class="card" style="width: 17rem;" id="work7">
-                <img class="card-img-top" src="img/image/super_supreme_new8.png" alt="Card image cap">
-
-                <p id="text7">WORK 7</p>
-            </div>
-
-            <div class="card" style="width: 17rem;" id="work6">
-                <img class="card-img-top" src="img/image/pizza1.jpeg" alt="Card image cap">
-
-                <p id="text6">WORK 6</p>
-            </div>
-
-
-            <div class="card" style="width: 17rem;" id="work5">
-                <img class="card-img-top" src="img/image/behari_chicken_pizza_img7.png" alt="Card image cap">
-
-                <p id="text5">WORK 5</p>
-            </div>
-
-
-
-        </div>
+</div>
+                </div>
 </body>
 
 </html>
