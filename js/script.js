@@ -1,3 +1,11 @@
+function Order(Type,size, crust, topping, number){
+    this.type=Type;
+    this.size= size;
+    this.crust=crust;
+    this.topping= topping;
+    this.number= number;
+  }
+
 $(document).ready(function() {
     $("form#form").submit(function(event) {
       event.preventDefault();
@@ -71,9 +79,7 @@ $(document).ready(function() {
       
       var inputtedNumber=$("select#number").val();
       console.log(inputtedNumber);
-      // if($("select#number").val()===1){
-      //   var money3=1
-      // }
+      
       var newPizza= new Order (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
       var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)
       var totalMoney = pizzaMoney * inputtedNumber
