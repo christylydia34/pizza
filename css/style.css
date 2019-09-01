@@ -34,7 +34,7 @@
   
  
   .topnav a.active {
-    background-color: black;
+    background-color: blue;
     color: white;
   }
   .home{
@@ -54,6 +54,7 @@
    padding-top: 250px;
    padding-bottom: 350px;
    font-size: 20px;
+   
 
  }
  #he1{
@@ -77,7 +78,7 @@
  }
  .card{
   margin: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20%;
  }
  #order{
    background-image: url(../img/logo.jpeg);
@@ -100,15 +101,24 @@
   margin-left: 30%;
  }
  footer{
-   margin-left: 450px;
+   margin-left: 100px;
    margin-top: 5%;
    text-align: center;
+   
 
  }
+p{
+  text-align: center;
+}
  .end{
   background-image: url(../img/footer.jpeg);
   background-size: cover;
   color: white;
   height: 50%;
   width: 100%;
+ }
+ #cs{
+   text-align: center;
+   margin-right: 300px;
+   font-size: 30px;
  }
