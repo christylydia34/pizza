@@ -31,11 +31,11 @@ $(document).ready(function() {
       var inputtedSize=$("select#size").val();
       // console.log("inputtedSize");
       if ($("select#size").val()==="small"){
-        var money1 = 5
+        var money2 = 5
       }else if ($("select#size").val()==="medium"){
-        var money1 = 7
+        var money2 = 7
       }else if ($("select#size").val()==="large"){
-        var money1 = 12
+        var money2= 12
       } else{
         alert("Please refresh and re-order")
       }
@@ -44,11 +44,11 @@ $(document).ready(function() {
       var inputtedCrust=$("select#crust").val();
       // console.log("inputtedCrust");
       if ($("select#crust").val() ==="Crispy"){
-        var money2= 1
+        var money3= 1
       } else if ($("select#crust").val() ==="Stuffed"){
-        var money2= 3
+        var money3= 3
       }else if ($("select#crust").val() ==="Gluten-free"){
-        var money2= 5
+        var money3= 5
       }else{
         alert("Please refresh and re-order")
       }
@@ -56,21 +56,21 @@ $(document).ready(function() {
       var inputtedTopping=$("select#topping").val();
       console.log("inputtedTopping");
       if($("select#topping").val()==="Pepperoni"){
-        var money3=1
+        var money4=1
       } else if ($("select#topping").val()==="Mushrooms"){
-        var money3=1
+        var money4=1
       } else if ($("select#topping").val()==="Onions"){
-        var money3=1
+        var money4=1
       }  else if ($("select#topping").val()==="Sausage"){
-        var money3=1
+        var money4=1
       } else if ($("select#topping").val()==="Bacon"){
         var money3=1
       }  else if ($("select#topping").val()==="Extra cheese"){
-        var money3=1
+        var money4=1
       } else if ($("select#topping").val()==="Black olives"){
-        var money3=1
+        var money4=1
       } else if ($("select#topping").val()==="Green peppers"){
-        var money3=1
+        var money4=1
       } else {
         alert("Please refresh and re-order")
       }
@@ -81,7 +81,7 @@ $(document).ready(function() {
       console.log(inputtedNumber);
       
       var newPizza= new Order (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
-      var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)
+      var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)+parseInt(money4)
       var totalMoney = pizzaMoney * inputtedNumber
       var total = totalMoney + 2 
     
