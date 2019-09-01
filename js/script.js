@@ -7,8 +7,6 @@ $(document).ready(function() {
   
   });
 
-
-
 function Order(type,size, crust, topping, number){
     this.type=type;
     this.size= size;
@@ -22,23 +20,23 @@ function Order(type,size, crust, topping, number){
   }
 
 $(document).ready(function() {
-    $("form#form").submit(function(event) {
+    $("form#f1").submit(function(event) {
       event.preventDefault();
   
     $("#oda").click (function(){
         var inputtedType=$("select#type").val();
         //console.log("inputtedType");
         if($("select#type").val()==="Pepporoni"){
-            var money1 = 10
+            var money1= 10
         }else if ($("select#type").val()==="Hawaiian"){
-            var money1 =15
+            var money1=15
         }else if ($("select#type").val()==="Stuffed"){
-            var money1 =20
+            var money1=20
     
         }else if ($("select#type").val()==="Barbecue"){
-            var money1 =25
+            var money1=25
         }else if ($("select#type").val()==="Chicken"){
-            var money1 =30
+            var money1=30
     }else {
         alert("Kindly refresh and re-order")
     }
@@ -48,7 +46,7 @@ $(document).ready(function() {
       if ($("select#size").val()==="small"){
         var money2 = 5
       }else if ($("select#size").val()==="medium"){
-        var money2 = 7
+        var money2= 7
       }else if ($("select#size").val()==="large"){
         var money2= 12
       } else{
@@ -79,7 +77,7 @@ $(document).ready(function() {
       }  else if ($("select#topping").val()==="Green peppers"){
         var money4=1
       } else if ($("select#topping").val()==="Bacon"){
-        var money3=1
+        var money4=1
       }  else if ($("select#topping").val()==="Extra cheese"){
         var money4=1
       } else if ($("select#topping").val()==="Black olives"){
