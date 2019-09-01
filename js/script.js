@@ -61,7 +61,7 @@ $(document).ready(function() {
         var money4=1
       } else if ($("select#topping").val()==="Onions"){
         var money4=1
-      }  else if ($("select#topping").val()==="Sausage"){
+      }  else if ($("select#topping").val()==="Green peppers"){
         var money4=1
       } else if ($("select#topping").val()==="Bacon"){
         var money3=1
@@ -69,8 +69,7 @@ $(document).ready(function() {
         var money4=1
       } else if ($("select#topping").val()==="Black olives"){
         var money4=1
-      } else if ($("select#topping").val()==="Green peppers"){
-        var money4=1
+      
       } else {
         alert("Please refresh and re-order")
       }
