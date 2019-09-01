@@ -1,9 +1,24 @@
-function Order(Type,size, crust, topping, number){
-    this.type=Type;
+$(document).ready(function() {
+
+    $("#he1").click(function(){
+      $(".pizzol").toggle(500);
+  
+  });
+  
+  });
+
+
+
+function Order(type,size, crust, topping, number){
+    this.type=type;
     this.size= size;
     this.crust=crust;
     this.topping= topping;
     this.number= number;
+  }
+
+  Order.prototype.pizza=function(){
+    return "Your Order: Pizza type is " + this.type+ ", size chosen is " + this.size + ", with " + this.crust + ", and" + this.topping +", the quantity ordered is " + this.number
   }
 
 $(document).ready(function() {
@@ -87,11 +102,11 @@ $(document).ready(function() {
       $("div#status").append("<label>" + newPizza.pizza() + "</label>");
       console.log(newPizza);
   
-      $("div#status").append("<label>" + "The charge will be " +totalMoney + " $"+ "</label>");
+      $("div#status").append("<label>" + "The charge will be " +totalMoney + " sh"+ "</label>");
       console.log(pizzaMoney);
   
       $("#delivery").click (function(){
-        $("div#status").append("<label>" + "The total to be paid is " + total+ " $"+ "</label>");
+        $("div#status").append("<label>" + "The total to be paid is " + total+ "sh"+ "</label>");
       console.log(total);
       });
   
