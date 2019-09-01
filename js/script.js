@@ -1,9 +1,6 @@
 // business logic
 $(document).ready (function(){
-    $("#he1").click(function(){
-        $(".pizzol").toggle(500);
-    });
-});
+   
 
 function Order(type,size,crust,topping,number){
     this.type=type;
@@ -21,7 +18,7 @@ Order.prototype.pizza=function(){
     $("form#f1").submit(function(event){
 event.preventDefault();
 
-$("#order").click(function(){
+$("#oda").click(function(){
 
     var inputtedType=$("select#type").val();
     console.log("inputtedType");
@@ -60,7 +57,7 @@ console.log("inputtedSize");
       var money3= 20
     }else if ($("select#crust").val()==="Gluten-free")
       var money3= 30
-    }else{
+    }else {
       alert("Please refresh and re-order")
     }
 
@@ -100,14 +97,14 @@ console.log("inputtedSize");
     var totalMoney = pizzaMoney * inputtedNumber
     var total = totalMoney + 10 
   
-    $("div#Status").append("<p1>" + newPizza.pizza() + "</p1><br>");
+    $("div#Status").append("<label>" + newPizza.pizza() + "</label>");
     console.log(newPizza);
 
-    $("div#Status").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1><br>");
+    $("div#Status").append("<label>" + "The charge will be " +totalMoney + " $"+ "</label>");
     console.log(pizzaMoney);
 
     $("#delivery").click (function(){
-      $("div#Status").append("<p1>" + "The total to be paid is " + total+ " $"+ "</p1>");
+      $("div#Status").append("<label>" + "The total to be paid is " + total+ " $"+ "</label>");
     console.log(total);
     });
 
@@ -115,13 +112,18 @@ console.log("inputtedSize");
 
 
 $(document).ready(function() {
-  $("#order").click (function(){    
+  $("#delivery").click (function(){    
 
-    alert("your order will be delivered to your location. let us know your location!")
+    alert("Your order has been recieved and will be delivered to your location. let us know your location!")
     prompt("Please enter your location (the street and city)");
     alert("The charge for delivery is 2 $, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day!");
 
   });
+  $("#he1").click(function(){
+    $(".pizzol").toggle(500);
+});
+});
+
 });
 
 
