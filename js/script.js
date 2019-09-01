@@ -100,7 +100,7 @@ console.log("inputtedSize");
     var totalMoney = pizzaMoney * inputtedNumber
     var total = totalMoney + 2 
   
-    $("div#sample").append("<p1>" + newPizza.pizza() + "</p1><br>");
+    $("div#Status").append("<p1>" + newPizza.pizza() + "</p1><br>");
     console.log(newPizza);
 
     $("div#sample").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1><br>");
@@ -115,7 +115,7 @@ console.log("inputtedSize");
 
 
 $(document).ready(function() {
-  $("#delivery").click (function(){    
+  $("#order").click (function(){    
 
     alert("your order will be delivered to your location. let us know your location!")
     prompt("Please enter your location (the street and city)");
