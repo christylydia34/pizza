@@ -98,16 +98,16 @@ console.log("inputtedSize");
     var newPizza = new Order (inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
     var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)+parseInt(money4)
     var totalMoney = pizzaMoney * inputtedNumber
-    var total = totalMoney + 2 
+    var total = totalMoney + 10 
   
     $("div#Status").append("<p1>" + newPizza.pizza() + "</p1><br>");
     console.log(newPizza);
 
-    $("div#sample").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1><br>");
+    $("div#Status").append("<p1>" + "The charge will be " +totalMoney + " $"+ "</p1><br>");
     console.log(pizzaMoney);
 
     $("#delivery").click (function(){
-      $("div#sample").append("<p1>" + "The total to be paid is " + total+ " $"+ "</p1>");
+      $("div#Status").append("<p1>" + "The total to be paid is " + total+ " $"+ "</p1>");
     console.log(total);
     });
 
