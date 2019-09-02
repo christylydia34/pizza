@@ -56,7 +56,7 @@ $(document).ready(function() {
   
   
       var inputtedCrust=$("select#crust").val();
-      // console.log("inputtedCrust");
+      console.log("inputtedCrust");
       if ($("select#crust").val() ==="Crispy"){
         var money3= 1
       } else if ($("select#crust").val() ==="Stuffed"){
@@ -93,7 +93,7 @@ $(document).ready(function() {
       var inputtedNumber=$("select#number").val();
       console.log(inputtedNumber);
       
-      var newPizza= new Order (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
+      var newPizza= new typePizza (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
       var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)+parseInt(money4)
       var totalMoney = pizzaMoney * inputtedNumber
       var total = totalMoney + 2 
