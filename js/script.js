@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   });
 
-function Order(type,size, crust, topping, number){
+function typePizza(type,size, crust, topping, number){
     this.type=type;
     this.size= size;
     this.crust=crust;
@@ -15,17 +15,18 @@ function Order(type,size, crust, topping, number){
     this.number= number;
   }
 
-  Order.prototype.pizza=function(){
-    return "Your Order: Pizza type is " + this.type+ ", size chosen is " + this.size + ", with " + this.crust + ", and" + this.topping +", the quantity ordered is " + this.number
+  typePizza.prototype.pizza=function(){
+    return "Your Order: Pizza type is " + this.type+ ", size chosen is " + this.size +  ", with a " + this.crust  +", and " + this.topping +", the quantity ordered is " + this.number
   }
 
+  
 $(document).ready(function() {
     $("form#f1").submit(function(event) {
       event.preventDefault();
   
-    $("#oda").click (function(){
+    $("#odr").click (function(){
         var inputtedType=$("select#type").val();
-        //console.log("inputtedType");
+        console.log("inputtedType");
         if($("select#type").val()==="Pepporoni"){
             var money1= 10
         }else if ($("select#type").val()==="Hawaiian"){
@@ -42,7 +43,7 @@ $(document).ready(function() {
     }
     
       var inputtedSize=$("select#size").val();
-      // console.log("inputtedSize");
+      console.log("inputtedSize");
       if ($("select#size").val()==="small"){
         var money2 = 5
       }else if ($("select#size").val()==="medium"){
@@ -66,21 +67,21 @@ $(document).ready(function() {
         alert("Please refresh and re-order")
       }
   
-      var inputtedTopping=$("select#topping").val();
+      var inputtedTopping=$("select#toppings").val();
       console.log("inputtedTopping");
-      if($("select#topping").val()==="Pepperoni"){
+      if($("select#toppings").val()==="Pepperoni"){
         var money4=1
-      } else if ($("select#topping").val()==="Mushrooms"){
+      } else if ($("select#toppings").val()==="Mushrooms"){
         var money4=1
-      } else if ($("select#topping").val()==="Onions"){
+      } else if ($("select#toppings").val()==="Onions"){
         var money4=1
-      }  else if ($("select#topping").val()==="Green peppers"){
+      }  else if ($("select#toppings").val()==="Green peppers"){
         var money4=1
-      } else if ($("select#topping").val()==="Bacon"){
+      } else if ($("select#toppings").val()==="Bacon"){
         var money4=1
-      }  else if ($("select#topping").val()==="Extra cheese"){
+      }  else if ($("select#toppings").val()==="Extra cheese"){
         var money4=1
-      } else if ($("select#topping").val()==="Black olives"){
+      } else if ($("select#toppings").val()==="Black olives"){
         var money4=1
       
       } else {
@@ -97,15 +98,16 @@ $(document).ready(function() {
       var totalMoney = pizzaMoney * inputtedNumber
       var total = totalMoney + 2 
     
-      $("div#status").append("<label>" + newPizza.pizza() + "</label>");
+      ($("div#status").append("<p1>" + newPizza.pizza() + "</p1><br>");
       console.log(newPizza);
   
-      $("div#status").append("<label>" + "The charge will be " +totalMoney + " sh"+ "</label>");
+      $("div#status").append("<p1>" + "The charge will be " +totalMoney + " sh"+ "</p1><br>");
       console.log(pizzaMoney);
   
       $("#delivery").click (function(){
-        $("div#status").append("<label>" + "The total to be paid is " + total+ "sh"+ "</label>");
+        $("div#status").append("<p1>" + "The total to be paid is " + total+ " sh"+ "</p1>");
       console.log(total);
+    
       });
   
       });

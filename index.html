@@ -95,17 +95,17 @@
                     <div class="col-md-6">
 
                         <form id="f1">
-                            <div class="form-group">
-                                <label for="size">Select your preefrable size</label>
-                                <select class="form-control" id="fmsize">
+                            <p1>Select your preferable size</p1></br>
+                                <select required id ="size"class="form-control">
+                                 
                                     <option>Small</option>
                                     <option>Medium</option>
                                     <option>Large></option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="type">Select your preferable pizza</label>
+                            
+                                <p1>Select your preferable pizza</p1></br>
                                 <select required id="type" class="form-control">
+                                    
                                     <option name="Type" value="Pepporoni">Pepporoni</option>
                                     <option name="Type" value="Hawiian">Hawiian</option>
                                     <option name="Type" value="Stuffed">Stuffed</option>
@@ -113,19 +113,14 @@
                                     </option>
 
                                 </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="crust">Select your preferable crust</label>
+                            <p1>Select your preferable crust</p1></br>
                                 <select class="form-control" id="crust">
                                     <option>Crispy</option>
                                     <option>Gluten-free</option>
                                     <option>Stuffed</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="toppings">Select your preferred toppings</label>
-                                <select class="form-control" id="toppings">
+                          <p1>Select your preferred toppings</p1></br>
+                                <select required id ="toppings"class="form-control" >
                                     <option name="toppings" value="Pepporoni">Pepporoni</option>
                                     <option name="toppings" value="Mushrooms">Mushrooms</option>
                                     <option name="toppings" value="Onions">Onions</option>
@@ -138,11 +133,9 @@
 
                                 </select>
 
-                            </div>
-
-                            <div class="form-group">
-                                <label for="Number">number you would want</label>
-                                <select class="form-control" name="number" id="no" aria-placeholder="eg5">
+                        
+                                <p1>Number you would want</p1></br>
+                                <select  required id="number" class="form-control" >
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -155,18 +148,17 @@
                                     <option value="10">10</option>
 
                                 </select>
-                            </div>
+                            <p1>choose if you want your order to be delivered.</p1></br>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <button name="order" id="oda" type="submit" class="btn btn-success"
-                                        onclick="return Order()">Order</button>
+                                    <button name="order" id="odr" type="submit" class="btn btn-success" onclick="return typePizza()">Order</button>
                                 </div>
                                 <div class="col-sm-6">
                                     <button type="submit" id="delivery" class="btn btn-warning">Delivery</button><br>
                                 </div>
                         </form>
 </div>
-                    </div>
+</div>
 
                     <div id="status">
 
