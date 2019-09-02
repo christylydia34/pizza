@@ -8,8 +8,7 @@ This webpage is for Christy's Pizza. It is a webpage  that allows you to order a
 * Connect to the internet
 * Open your browser
 * In your browser address bar type the following
-https://christylydia34.github.io/pizza-project/
-* then you will directly be on their page
+https://christylydia34.github.io/pizza/* then you will directly be on their page
 
 ## BDD
 
