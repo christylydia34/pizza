@@ -43,10 +43,6 @@ https://christylydia34.github.io/pizza/* then you will directly be on their page
     Output Example: Your Order: Pizza size is small, crust chosen is Crispy, with Pepperoni, the quantity the quantity ordered is 2.
 
 
-
-## Known Bugs
-This webpage is not suitable for all screen sizes.
-
 ## Technologies Used
 * HTML 
 * CSS
