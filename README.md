@@ -38,7 +38,7 @@ https://christylydia34.github.io/pizza/* then you will directly be on their page
 
           Number: 2
 
-    Output Example: The charge will be 14 $.      
+    Output Example: The charge will be 14 sh      
 
     Output Example: Your Order: Pizza size is small, crust chosen is Crispy, with Pepperoni, the quantity the quantity ordered is 2.
 
