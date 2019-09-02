@@ -125,3 +125,8 @@ p{
 .btn:hover{
   text-decoration: none;
 }
+#status{
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-right: 10%;
+}

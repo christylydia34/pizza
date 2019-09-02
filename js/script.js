@@ -28,16 +28,16 @@ $(document).ready(function() {
         var inputtedType=$("select#type").val();
         console.log("inputtedType");
         if($("select#type").val()==="Pepporoni"){
-            var money1= 10
+            var amt1= 1000
         }else if ($("select#type").val()==="Hawaiian"){
-            var money1=15
+            var amt1=1500
         }else if ($("select#type").val()==="Stuffed"){
-            var money1=20
+            var amt1=2000
     
         }else if ($("select#type").val()==="Barbecue"){
-            var money1=25
+            var amt1=2500
         }else if ($("select#type").val()==="Chicken"){
-            var money1=30
+            var amt1=3000
     }else {
         alert("Kindly refresh and re-order")
     }
@@ -45,11 +45,11 @@ $(document).ready(function() {
       var inputtedSize=$("select#size").val();
       console.log("inputtedSize");
       if ($("select#size").val()==="small"){
-        var money2 = 5
+        var amt2 = 500
       }else if ($("select#size").val()==="medium"){
-        var money2= 7
+        var amt2= 700
       }else if ($("select#size").val()==="large"){
-        var money2= 12
+        var amt2= 1200
       } else{
         alert("Please refresh and re-order")
       }
@@ -58,11 +58,11 @@ $(document).ready(function() {
       var inputtedCrust=$("select#crust").val();
       console.log("inputtedCrust");
       if ($("select#crust").val() ==="Crispy"){
-        var money3= 1
+        var amt3= 100
       } else if ($("select#crust").val() ==="Stuffed"){
-        var money3= 3
+        var amt3= 300
       }else if ($("select#crust").val() ==="Gluten-free"){
-        var money3= 5
+        var amt3= 500
       }else{
         alert("Please refresh and re-order")
       }
@@ -70,19 +70,19 @@ $(document).ready(function() {
       var inputtedTopping=$("select#toppings").val();
       console.log("inputtedTopping");
       if($("select#toppings").val()==="Pepperoni"){
-        var money4=1
+        var amt4=100
       } else if ($("select#toppings").val()==="Mushrooms"){
-        var money4=1
+        var amt4=100
       } else if ($("select#toppings").val()==="Onions"){
-        var money4=1
+        var amt4=100
       }  else if ($("select#toppings").val()==="Green peppers"){
-        var money4=1
+        var amt4=100
       } else if ($("select#toppings").val()==="Bacon"){
-        var money4=1
+        var amt4=100
       }  else if ($("select#toppings").val()==="Extra cheese"){
-        var money4=1
+        var amt4=100
       } else if ($("select#toppings").val()==="Black olives"){
-        var money4=1
+        var amt4=100
       
       } else {
         alert("Please refresh and re-order")
@@ -94,9 +94,9 @@ $(document).ready(function() {
       console.log(inputtedNumber);
       
       var newPizza= new typePizza (inputtedType,inputtedSize, inputtedCrust, inputtedTopping,inputtedNumber);
-      var pizzaMoney= parseInt(money1) +parseInt(money2)+parseInt(money3)+parseInt(money4)
+      var pizzaMoney= parseInt(amt1) +parseInt(amt2)+parseInt(amt3)+parseInt(amt4)
       var totalMoney = pizzaMoney * inputtedNumber
-      var total = totalMoney + 2 
+      var total = totalMoney + 250
     
       ($("div#status").append("<p1>" + newPizza.pizza() + "</p1><br>");
       console.log(newPizza);
@@ -122,9 +122,9 @@ $(document).ready(function() {
   $(document).ready(function() {
     $("#delivery").click (function(){    
   
-      alert("your order will be delivered to your location. let us know your location!")
+      alert("Thank you for choosing christys pizza.Your order will be delivered to you shortly. Kindly let us know your location!")
       prompt("Please enter your location (the street and city)");
-      alert("The delivery cost is 250shs, in 10-20 minutes your order will be in your hands! Thank you for shopping with us, have a fruitful day!");
+      alert("The delivery cost is 250shs .Your order will be delivered within in 10-20 minutes . Thank you for shopping with us, have a fruitful day!");
   
     });
   });
