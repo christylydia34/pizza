@@ -121,7 +121,6 @@ $(document).ready(function() {
   
   $(document).ready(function() {
     $("#delivery").click (function(){    
-  
       alert("Thank you for choosing christys pizza.Your order will be delivered to you shortly. Kindly let us know your location!")
       prompt("Please enter your location (the street and city)");
       alert("The delivery cost is 250shs .Your order will be delivered within in 10-20 minutes . Thank you for shopping with us, have a fruitful day!");
